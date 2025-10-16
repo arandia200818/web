@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuento del Búho con Ojos de Universo</title>
+  <link rel="stylesheet" href="proyectoinicio.css" />
+  <style>
+   .video-page {
+      text-align: center;
+      padding: 60px 20px;
+      color: #f1f1f1;
+    }
+
+    .video-page h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    video {
+      width: 80%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .back-btn {
+      background: linear-gradient(to right, #9b1fcc, #da1b1b);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: linear-gradient(to right, #9b1fcc, #da1b1b);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="video-page container">
+    <h1><strong>Cuento del Búho con Ojos de Universo</strong></h1>
+    <video id="video" controls autoplay>
+      <source src="video/cuento-buho.mp4" type="video/mp4" />
+      <track src="media/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+    </video>
+  <div class="video-buttons">
+    <button onclick="playVideo()">▶ Reproducir</button>
+    <button onclick="pauseVideo()">⏸ Pausar</button>
+      <a href="proyectoinicio.html" class="back-btn">⬅ Volver al inicio</a>
+  </div>
+  </section>
+  <script>
+    const video = document.getElementById("video");
+
+    function playVideo() {
+      video.play();
+    }
+    function pauseVideo() {
+      video.pause();
+    }
+
+  </script>
+  </section>
+
+</body>
+</html>
